@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main class="calculadoraIos">
+        <input class="item" id="monitor" type="text">
+
+        <button id="clear" class="item" onclick="monitor.value = ('')">C</button>
+        <button id="plusMinus" class="item" onclick="changeSign()">+/-</button>
+        <button id="perc" class="item" onclick="percentual()">%</button>
+            <button id="divisao" class="item special" onclick="operacao('divisao')">&#247;</button>
+
+            <button id="7" class="item" onclick="tela('7');">7</button>
+            <button id="8" class="item" onclick="tela('8');">8</button>
+            <button id="9" class="item" onclick="tela('9');">9</button>
+            <button id="mult" class="item special" onclick="operacao('mult')">&#215;</button>
+
+            <button id="4" class="item" onclick="tela('4');">4</button>
+            <button id="5" class="item" onclick="tela('5');">5</button>
+            <button id="6" class="item" onclick="tela('6');">6</button>
+            <button id="minus" class="item special" onclick="operacao('minus')">-</button>
+
+            <button id="1" class="item" onclick="tela('1');">1</button>
+            <button id="2" class="item" onclick="tela('2');">2</button>
+            <button id="3" class="item" onclick="tela('3');">3</button>
+            <button id="plus" class="item special" onclick="operacao('plus')">+</button>
+
+            <button id="zero" class="item" onclick="tela('0')">0</button>
+            <button id="," class="item" onclick="tela(',');">,</button>
+            <button id="equal" class="item special" onclick="calc();">=</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
